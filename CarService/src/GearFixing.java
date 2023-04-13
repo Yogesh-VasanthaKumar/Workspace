@@ -1,24 +1,23 @@
-package Implementations;
-
 import enums.Car;
 import interfaces.IService;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class BrakeFixing implements IService {
+public class GearFixing implements IService
+{
 
     private Car car;
 
     private static Map<Car, Integer> carTypePrice = new HashMap<Car, Integer>();
     {
-        carTypePrice.put(Car.SEDAN, 1500);
-        carTypePrice.put(Car.HATCHBACK, 1000);
-        carTypePrice.put(Car.SUV, 2500);
+        carTypePrice.put(Car.SEDAN, 6000);
+        carTypePrice.put(Car.HATCHBACK, 3000);
+        carTypePrice.put(Car.SUV, 8000);
 
     }
 
-    BrakeFixing(Car car){
+    GearFixing(Car car){
         this.car = car;
     }
     @Override
